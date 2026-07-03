@@ -2,6 +2,12 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "kayak",
   "compatibility_date": "2026-07-03",
+  "routes": [
+    {
+      "pattern": "kayak.dpdns.org",
+      "custom_domain": true
+    }
+  ],
   "observability": {
     "enabled": true
   },
