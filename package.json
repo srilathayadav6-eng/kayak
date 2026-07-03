@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "prisma generate && next build",
     "postinstall": "prisma generate",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "npx @opennextjs/cloudflare build && npx @opennextjs/cloudflare deploy",
+    "preview": "npx @opennextjs/cloudflare build && npx @opennextjs/cloudflare preview",
     "start": "next start",
     "lint": "eslint"
   },
