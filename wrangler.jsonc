@@ -1,10 +1,22 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
+  "main": ".open-next/worker.js",
   "name": "kayak2",
   "compatibility_date": "2026-07-03",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
   "assets": {
-    "directory": "./out"
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
   },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "kayak2"
+    }
+  ],
   "routes": [
     {
       "pattern": "kayak.dpdns.org",
