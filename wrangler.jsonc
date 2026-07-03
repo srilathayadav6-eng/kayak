@@ -2,6 +2,9 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "kayak2",
   "compatibility_date": "2026-07-03",
+  "assets": {
+    "directory": "./out"
+  },
   "routes": [
     {
       "pattern": "kayak.dpdns.org",
@@ -10,8 +13,5 @@
   ],
   "observability": {
     "enabled": true
-  },
-  "compatibility_flags": [
-    "nodejs_compat"
-  ]
+  }
 }
